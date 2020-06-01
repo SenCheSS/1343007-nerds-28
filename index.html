@@ -9,7 +9,7 @@
     <header>
       <nav class="nav">
         <!--Лого-->
-        <a class="logo"
+        <a class="logo" aria-label="Логотип компании Нёрдс"
           ><img
             src="img/header/nerds-logo.svg"
             height="160"
@@ -76,7 +76,7 @@
         </ul>
       </section>
       <section class="features">
-        <h2>Наши предложения</h2>
+        <h2 class="visually-hidden">Наши предложения</h2>
         <ul>
           <li>
             <img
@@ -168,7 +168,7 @@
       <section class="works">
         <ul>
           <li>
-            <a href="#"
+            <a href="#" aria-label="HTML Academy"
               ><img
                 src="img/main_index/logo_html_academy.png"
                 height="68"
@@ -177,7 +177,7 @@
             /></a>
           </li>
           <li>
-            <a href="#"
+            <a href="#" aria-label="Borodinsky"
               ><img
                 src="img/main_index/logo_borodinsky.png"
                 height="90"
@@ -186,7 +186,7 @@
             /></a>
           </li>
           <li>
-            <a href="#"
+            <a href="#" aria-label="Pink"
               ><img
                 src="img/main_index/logo_pink.png "
                 height="52"
@@ -195,7 +195,7 @@
             /></a>
           </li>
           <li>
-            <a href="#"
+            <a href="#" aria-label="Mishka"
               ><img
                 src="img/main_index/logo_mishka.png"
                 height="84"
@@ -215,16 +215,15 @@
         <div class="footer-contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812)
-            275-75-75
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.
+            <a href="tel.+7(812)2757575" class="tel">+7(812)275-75-75</a>
           </p>
           <a href="#" class="button">НАПИШИТЕ НАМ</a>
           <img
             src="img/footer/map.png"
             width="1440"
             height="416"
-            alt="191186,
-          Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75"
+            alt="Напишите нам"
           />
         </div>
       </div>
@@ -232,14 +231,18 @@
       <div class="footer-bottom">
         <ul class="social">
           <li>
-            <a href="#"><img src="img/footer/vk-icon.svg" alt="Вконтакте" /></a>
+            <a href="#" aria-label="Вконтакте"
+              ><img src="img/footer/vk-icon.svg" alt="Вконтакте"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="img/footer/fb-icon.svg" alt="Фэйсбук" /></a>
+            <a href="#" aria-label="Facebook"
+              ><img src="img/footer/fb-icon.svg" alt="Facebook"
+            /></a>
           </li>
           <li>
-            <a href="#"
-              ><img src="img/footer/insta-icon.svg" alt="Инстаграм"
+            <a href="#" aria-label="Instagram"
+              ><img src="img/footer/insta-icon.svg" alt="Instagram"
             /></a>
           </li>
         </ul>
@@ -249,39 +252,45 @@
         </div>
       </div>
     </footer>
-    <section class="call_us">
+    <section class="call-us">
       <!--Здесь будет пупап-- Напишите нам -->
+      <div class="call-us_header">
+        <h2>Напишите нам</h2>
+        <button class="exit" aria-label="Закрыть">
+          <img src="img/close-cross.svg" alt="Закрыть" />
+        </button>
+      </div>
       <form action="#" method="post">
-        <fieldset>
-          <legend>Напишите нам</legend>
-          <ul>
-            <li>
-              <label for="login">Ваше имя:</label>
-              <input
-                id="login"
-                type="text"
-                name="login"
-                placeholder="Имя Фамилия"
-              />
-            </li>
-            <li>
-              <label for="email">Ваш email:</label>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="email@example.com"
-              />
-            </li>
-            <li>
-              <label>Текст письма:</label>
-              <textarea name="text_comment" cols="80" rows="8"> </textarea>
-            </li>
-          </ul>
-        </fieldset>
+        <ul>
+          <li>
+            <label for="login">Ваше имя:</label>
+            <input
+              id="login"
+              type="text"
+              name="login"
+              placeholder="Имя Фамилия"
+            />
+          </li>
+          <li>
+            <label for="email">Ваш email:</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </li>
+          <li>
+            <label for="message">Текст письма:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="В свободной форме"
+            ></textarea>
+          </li>
+        </ul>
         <button type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
     </section>
   </body>
 </html>
