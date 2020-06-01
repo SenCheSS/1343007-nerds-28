@@ -44,7 +44,7 @@
       <!--Содержимое кталога-->
       <section class="catalog">
         <!--Контент слева-->
-        <form action="#" class="form">
+        <form action="#" class="form" method="get">
           <!--Стоимость-->
           <fieldset>
             <legend>Заголовок</legend>
@@ -62,7 +62,13 @@
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <input type="radio" name="grid" id="adaptive" value="apative" />
+                <input
+                  type="radio"
+                  name="grid"
+                  id="adaptive"
+                  value="apative"
+                  checked
+                />
                 <label for="adaptive">Адаптивная</label>
               </li>
               <li>
@@ -85,7 +91,7 @@
             <legend>Особенности:</legend>
             <ul>
               <li>
-                <input type="checkbox" id="slider" value="slider" />
+                <input type="checkbox" id="slider" value="slider" checked />
                 <label for="slider">Слайдер</label>
               </li>
               <li>
@@ -93,7 +99,7 @@
                 <label for="benefits">Блок преимущест></label>
               </li>
               <li>
-                <input type="checkbox" id="news" value="news" />
+                <input type="checkbox" id="news" value="news" checked />
                 <label for="news">Новости</label>
               </li>
               <li>
@@ -316,8 +322,38 @@
         </div>
       </div>
     </footer>
-    <section class="pup-call_us">
-      <!--Здесь будет пупап Напишите нам -->
+    <section class="call_us">
+      <!--Здесь будет пупап-- Напишите нам -->
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <ul>
+            <li>
+              <label for="login">Ваше имя:</label>
+              <input
+                id="login"
+                type="text"
+                name="login"
+                placeholder="Имя Фамилия"
+              />
+            </li>
+            <li>
+              <label for="email">Ваш email:</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+              />
+            </li>
+            <li>
+              <label>Текст письма:</label>
+              <textarea name="text_comment" cols="80" rows="8"> </textarea>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Отправить</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
   </body>
