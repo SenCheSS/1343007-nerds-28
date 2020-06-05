@@ -1,0 +1,95 @@
+:root {
+  --special-white: #888888;
+  --basic-grey: #eeeeee;
+  --basic-black-text-upper: #000000;
+  --basic-medium-black: #283136;
+  --basic-light-grey: #e1e1e1;
+  --basic-white: #ffffff;
+  --basic-pink: #fb565a;
+  --basic-dark-pink: #d7373b;
+  --basic-medium-pink: #e74246;
+  --basic-medium-grey: #666666;
+  --basic-dark: #283136;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--basic-medium-black);
+  background-color: var(--basic-white);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.nav {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--basic-black-text-upper);
+  background-color: transparent;
+}
+.nav-wrapper {
+  background-color: var(--basic-grey);
+}
+.menu {
+  list-style: none;
+}
+.menu a {
+  color: var(--basic-black-text-upper);
+}
+.nav a:hover,
+.nav a:focus {
+  color: var(--basic-pink);
+}
+
+/* Features */
+
+.features {
+  list-style: none;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black-text-upper);
+}
+
+.features p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark);
+}
+.features a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-pink);
+  border-radius: 3px;
+}
+.features a:hover,
+.features a:focus {
+  color: var(--basic-medium-pink);
+}
