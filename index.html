@@ -3,33 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet />
-    <link href="normalize.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
-      <nav class="nav">
+      <nav class="nav container">
         <!--Лого-->
         <a class="logo" aria-label="Логотип компании Нёрдс"
           ><img
             src="img/header/nerds-logo.svg"
-            height="160"
-            width="65"
+            height="65"
+            width="160"
             alt="Логотип компании Нёрдс"
         /></a>
         <!--Меню-->
         <ul class="menu">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="catalog.html" class="current">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <!--Пользовательское меню-->
-        <ul>
+        <ul class="bin">
           <li>
             <a href="#">
               <img
@@ -55,7 +59,7 @@
                 Математически выверенный дизайн для вашего сайта или мобильного
                 приложения.
               </p>
-              <a href="#" class="button">УЗНАТЬ БОЛЬШЕ</a>
+              <a href="#" class="button button-red">УЗНАТЬ БОЛЬШЕ</a>
             </div>
           </li>
           <li class="slide">
@@ -65,7 +69,7 @@
                 Никакого креатива, только математические формулы для расчета
                 идеальных пропорций.
               </p>
-              <a href="#" class="button">УЗНАТЬ БОЛЬШЕ</a>
+              <a href="#" class="button button-red">УЗНАТЬ БОЛЬШЕ</a>
             </div>
           </li>
           <li class="slide">
@@ -75,7 +79,7 @@
                 Работать днем, как все? Мы против этого. Ближе к полуночи работа
                 только начинается.
               </p>
-              <a href="#" class="button">УЗНАТЬ БОЛЬШЕ</a>
+              <a href="#" class="button button-red">УЗНАТЬ БОЛЬШЕ</a>
             </div>
           </li>
         </ul>
@@ -94,7 +98,7 @@
             <p>
               Мир никогда не будет прежним после того как увидит ваш сайт!
             </p>
-            <a href="catalog.html">Заказать</a>
+            <a href="catalog.html" class="button button-red">Заказать</a>
           </li>
           <li>
             <img
@@ -105,7 +109,7 @@
             />
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="catalog.htnl">Заказать</a>
+            <a href="catalog.htnl" class="button button-green">Заказать</a>
           </li>
           <li>
             <img
@@ -116,7 +120,7 @@
             />
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="catalog.html">Заказать</a>
+            <a href="catalog.html" class="button button-yellow">Заказать</a>
           </li>
         </ul>
       </section>
